@@ -11,10 +11,8 @@ public class Calculation {
      * @return Returns two-dimensional array
      */
     public static int[][] getMatrix(int N, int M) {
-        int[][] array = new int[N][];
-        for(int i = 0; i < N; i++) {
-            array[i] = new int[M];
-        }
+        int[][] array = new int[N][M];
+
         array[0][1] = array[0][0] = 1;
 
         for(int i = 2; i < N * M; i++) {
